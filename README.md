@@ -1,81 +1,174 @@
 # 🎓 Grading AI — Intelligent Assessment Engine
 
-> **Minor Project | KRMU 2026**
-> An intelligent, end-to-end automated exam grading platform built for teachers. Upload handwritten answer sheets, get AI-generated scores and feedback instantly.
+> **Minor Project**
+> An end-to-end AI-powered grading platform that automates evaluation of handwritten answer sheets using OCR and NLP.
 
 ---
 
-## 👥 The Team
+## 🌟 Project Overview
 
-| Name | Role | Core Responsibility |
-|---|---|---|
-| **Nikunj Kaushik** | **Team Lead & AI Specialist** | AI Engine (EasyOCR + NLP Evaluation), Final Integration |
-| **Manya Juneja** | **Frontend Architect** | System UI Design, Navbar, and Landing Page |
-| **Prarthna Gautam** | **Product & UX Design** | Interactive Dashboard, Student Registry, and Result Lookup |
-| **Garvit Sharma** | **Backend Infrastructure** | FastAPI Services, Database Schema, and Auth Logic |
+**Grading AI** is designed to transform the traditional exam evaluation process by enabling teachers to:
 
----
+* 📄 Upload scanned handwritten answer sheets
+* 🤖 Automatically evaluate answers using AI
+* 📊 Generate scores, analytics, and feedback instantly
+* ✅ Review and override AI decisions before publishing
 
-## 🛡️ Anti-Cheating & Integrity First
-Unlike basic upload tools, **Grading AI** is designed with institutional integrity in mind:
-- **Teacher-Only Uploads**: Students cannot use phones to upload. Teachers collect physical sheets and perform a bulk scan.
-- **AI-Verified Handwriting**: The OCR engine is fine-tuned to extract handwritten text with high fidelity, preventing manual manipulation.
-- **Cheat Detection**: Students only have access to a **Result Lookup** portal after the teacher has verified and approved the AI grades.
+This system ensures **accuracy, efficiency, and academic integrity**.
 
 ---
 
-## 🚀 Quick Start (One Click)
+## 👥 Team & Contributions
 
-Double-click **`run_projexa.bat`** in the project root.
-
-This will:
-1. Start the FastAPI backend on `http://localhost:8000`
-2. Start the React frontend on `http://localhost:5173`
-
-**Default Admin Login:** `teacher@projexa.com` / `admin123`
-
----
-
-## 🧠 Tech Stack
-
-| Layer | Technology |
-|---|---|
-| **Frontend** | React + Vite + TailwindCSS + Framer Motion |
-| **Backend** | FastAPI (Python) |
-| **Database** | SQLite (via SQLAlchemy) |
-| **OCR Engine** | EasyOCR + OpenCV (preprocessing pipeline) |
-| **NLP Scoring** | SentenceTransformers (all-MiniLM-L6-v2) + Multi-Metric Semantic Analysis |
-| **Auth** | JWT Bearer Tokens (python-jose + bcrypt) |
+| Name                | Role                      | Responsibility                       |
+| ------------------- | ------------------------- | ------------------------------------ |
+| **Nikunj Kaushik**  | Team Lead & AI Specialist | OCR + NLP Engine, System Integration |
+| **Manya Juneja**    | Frontend Architect        | UI Design, Landing Page              |
+| **Prarthna Gautam** | Product & UX              | Dashboard, Student Registry          |
+| **Garvit Sharma**   | Backend Developer         | FastAPI APIs, Database, Auth         |
 
 ---
 
-## 📖 How It Works
+## 🧠 Key Features
+
+### 🔐 Secure & Role-Based Access
+
+* JWT Authentication (Teacher login)
+* Protected evaluation environment
+
+### 🧾 Smart Paper Processing
+
+* EasyOCR + OpenCV preprocessing
+* Accurate handwritten text extraction
+
+### 🤖 AI-Based Evaluation
+
+* Semantic similarity using SentenceTransformers
+* Keyword-based scoring system
+* Multi-metric evaluation pipeline
+
+### 📊 Teacher Dashboard
+
+* Score distribution analytics
+* Student performance insights
+* Manual override system
+
+### 🎯 Student Portal
+
+* Result lookup via roll number
+* Personalized feedback
+
+### 📁 Export & Reports
+
+* Excel export (.xlsx)
+* Structured evaluation reports
+
+---
+
+## 🛡️ Academic Integrity System
+
+* 🚫 Students cannot upload answer sheets
+* 🧑‍🏫 Teacher-controlled evaluation workflow
+* 🔍 AI-assisted cheat detection mechanisms
+* ✅ Final approval by teacher before publishing
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer    | Technology                                 |
+| -------- | ------------------------------------------ |
+| Frontend | React + Vite + TailwindCSS + Framer Motion |
+| Backend  | FastAPI (Python)                           |
+| Database | SQLite (SQLAlchemy)                        |
+| OCR      | EasyOCR + OpenCV                           |
+| NLP      | SentenceTransformers (MiniLM)              |
+| Auth     | JWT (python-jose + bcrypt)                 |
+
+---
+
+## 🔄 System Workflow
 
 ```mermaid
 graph TD
-    A[Teacher creates Exam] --> B[Teacher adds Questions + Model Answers]
-    B --> C[Teacher collects Answer Sheets]
-    C --> D[Teacher Scans & Bulk Uploads]
-    D --> E[AI Evaluates Semantic Similarity]
-    E --> F[Teacher Reviews & Approves in Cockpit]
-    F --> G[Student views Results via Roll Number]
+    A[Teacher creates Exam] --> B[Add Questions + Model Answers]
+    B --> C[Collect Answer Sheets]
+    C --> D[Scan & Upload]
+    D --> E[AI Evaluation]
+    E --> F[Teacher Review]
+    F --> G[Publish Results]
 ```
-
-## ✅ Features Checklist
-
-- [x] JWT Authentication (teacher login)
-- [x] Teacher Scans & Ingests student papers directly (Integrity Priority)
-- [x] Bulk student answer uploads via Teacher Workspace
-- [x] EasyOCR with advanced OpenCV preprocessing
-- [x] Hybrid AI scoring (semantic NLP + keyword matching)
-- [x] Teacher verification & score override UI
-- [x] Student roll number auto-detection from scans
-- [x] Student Registry & Result Lookup portal
-- [x] Analytics dashboard with score distribution
-- [x] Personalized 3-step AI action plan per student
-- [x] Export scores to Excel (.xlsx)
-- [x] One-click launcher script
 
 ---
 
-*Grading AI — A Minor Project by KR Mangalam University Students (2026)*
+## 🚀 Quick Start (Local Setup)
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/project-name.git
+cd project-name
+```
+
+### 2️⃣ Run the project
+
+Double-click:
+
+```bash
+run_projexa.bat
+```
+
+---
+
+### 🔑 Default Login
+
+```
+Email: teacher@projexa.com  
+Password: admin123
+```
+
+
+---
+
+## 📸 Screenshots
+<img width="1274" height="568" alt="Screenshot 2026-04-07 181819" src="https://github.com/user-attachments/assets/6ed5e3d8-3647-4b7b-8dbb-cdb977c77798" />
+
+<img width="1263" height="567" alt="image" src="https://github.com/user-attachments/assets/2619a385-3af8-4f64-a85d-287bc762097d" />
+
+
+### 🏠 Landing Page
+
+![Landing](./assets/landing.png)
+
+### 📊 Dashboard
+
+![Dashboard](./assets/dashboard.png)
+
+### 📄 Evaluation Interface
+
+![Evaluation](./assets/evaluation.png)
+
+---
+
+## 🔮 Future Improvements
+
+* 🌍 Cloud deployment (AWS / Render)
+* 🧠 Advanced NLP scoring (LLMs)
+* 📱 Mobile-friendly UI
+* 🔍 Improved handwriting recognition
+
+---
+
+## 📌 Conclusion
+
+Grading AI demonstrates how **AI can revolutionize education systems** by automating evaluation while maintaining fairness and control.
+
+---
+
+## 🙌 Acknowledgment
+
+Developed as a **Minor Project at KR Mangalam University (2026)**
+
+---
+
+⭐ *If you found this project interesting, consider starring the repo!*

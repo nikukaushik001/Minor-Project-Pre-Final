@@ -120,13 +120,6 @@ run_projexa.bat
 
 ---
 
-### 🔑 Default Login
-
-```
-Email: teacher@projexa.com  
-Password: admin123
-```
-
 
 ---
 
@@ -134,19 +127,6 @@ Password: admin123
 <img width="1274" height="568" alt="Screenshot 2026-04-07 181819" src="https://github.com/user-attachments/assets/6ed5e3d8-3647-4b7b-8dbb-cdb977c77798" />
 
 <img width="1263" height="567" alt="image" src="https://github.com/user-attachments/assets/2619a385-3af8-4f64-a85d-287bc762097d" />
-
-
-### 🏠 Landing Page
-
-![Landing](./assets/landing.png)
-
-### 📊 Dashboard
-
-![Dashboard](./assets/dashboard.png)
-
-### 📄 Evaluation Interface
-
-![Evaluation](./assets/evaluation.png)
 
 ---
 
@@ -167,7 +147,7 @@ Grading AI demonstrates how **AI can revolutionize education systems** by automa
 
 ## 🙌 Acknowledgment
 
-Developed as a **Minor Project at KR Mangalam University (2026)**
+Developed as a **Pre Final Year Minor Project**
 
 ---
 

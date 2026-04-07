@@ -1,0 +1,17 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/*.db
+backend/*.log
+backend/top_slice_temp.jpg
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# OS/IDEs
+.DS_Store
+.vscode/
+.idea/
+*.bak
+*.tmp
